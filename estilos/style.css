@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+    color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 120px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+header a:hover{
+    color: orange;
+}
+
+header img{
+    height: 100px;
+}
+
+.hero{
+    text-align: center;
+    
+}
+
+.lista-proyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+}
+
+.lista-proyectos img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.lista-proyectos li{
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1, h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px){
+    header nav ul{
+        display: none;
+    }
+
+    .lista-proyectos{
+        display: grid;
+        grid-template-columns: 1fr;
+        list-style: none;
+    }
+}
+
+.formulario{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column ;
+    margin: 0 auto;
+}
+
+.hero img{
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.grid-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.grid-about img{
+    max-width: 400px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.text-about p{
+    margin-top: 10px;
+}
+
+.extra{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.extra p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    margin-top: 30px;
+    
+}
+
